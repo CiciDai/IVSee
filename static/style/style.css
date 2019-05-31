@@ -1,0 +1,234 @@
+.header {
+  overflow: hidden;
+  background-color: #51687A;
+  padding: 1px 20px;
+  margin-bottom: 2.5em;
+}
+/* Style the header links */
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 4px;
+  font-weight: lighter;
+}
+
+/* Style the logo link */
+.header a.logo {
+  font-size: 25px;
+}
+
+/* Change the color on mouse-over */
+.header a:hover {
+  color: lightgray;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  font: proxima-nova;
+  font-weight: 550;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+body{
+  background-color: #FAFAFA;
+}
+.demo-card-wide.mdl-card {
+  width: 100%;
+}
+.container{
+  display:grid;
+  width:94%;
+  grid-gap:35px;
+  grid-template-columns: repeat(auto-fit,minmax(400px,600px));
+}
+.container > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+
+/* patient */
+p1{
+  display:block;
+  font-weight: bold;
+  font-size: 16pt;
+}
+/* left col */
+p2{
+  display:block;
+  font-size:12pt;
+  padding:2pt 0pt 12pt 0pt;
+  font-weight: lighter;
+}
+
+b{
+  font-size:12pt;
+  font-weight: bold;
+}
+
+/* right col */
+p3{
+  font-size:14pt;
+  font-weight: lighter;
+}
+b2{
+  font-size:18pt;
+  font-weight: bold;
+}
+
+
+
+input[type=button]{
+  background-color: #80CBC4;
+  border-radius: 25px;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12pt;
+  cursor: pointer;
+}
+#row1{
+  display:flex;
+  justify-content: space-between;
+}
+#row2{
+  display:flex;
+  justify-content: space-between;
+}
+#column2{
+  border-width: 5px;
+  text-align: center;
+}
+.row1_battery{
+  display:flex;
+  flex-direction:column;
+}
+.battery {
+	position: relative;
+	display: block;
+	background: #85E5AC;
+	width: 26px;
+	height: 15px;
+}
+.battery.half {
+  width: 13px;
+  border-radius: 2px;
+}
+.battery.half:before {
+	content: "";
+  z-index: -1;
+	display: block;
+	background: #C4C4C4;
+	margin: 0px -13px;
+	width: 26px;
+	height: 15px;
+	position: absolute;
+	border-radius: 2px;
+}
+.battery.half:after {
+	content: "";
+	display: block;
+	background: #C4C4C4;
+	margin: 3px -18px;
+	width: 6px;
+	height: 10px;
+	position: absolute;
+	border-radius: 2px;
+}
+.battery.empty {
+  width: 7px;
+  background: #FF6666;
+  border-radius: 2px;
+  margin-left:auto;
+}
+.battery.empty:before {
+	content: "";
+  z-index: -1;
+	display: block;
+	background: #C4C4C4;
+	margin: 0px -19px;
+	width: 26px;
+	height: 15px;
+	position: absolute;
+	border-radius: 2px;
+}
+.battery.empty:after {
+	content: "";
+	display: block;
+	background: #C4C4C4;
+	margin: 3px -24px;
+	width: 6px;
+	height: 10px;
+	position: absolute;
+	border-radius: 2px;
+}
+
+.battery.full:before {
+	content: "";
+  z-index: -1;
+	display: block;
+	background: #85E5AC;
+/* 	margin: 0px -19px; */
+	width: 26px;
+	height: 15px;
+	position: absolute;
+	border-radius: 2px;
+}
+.battery.full:after {
+	content: "";
+	display: block;
+	background: #85E5AC;
+	margin: 2.5px -5px;
+	width: 6px;
+	height: 10px;
+	position: absolute;
+	border-radius: 2px;
+}
+
+.progress {
+  background-color: #C4C4C4;  
+}
+
+.progress.vertical {
+    position: relative;
+    width: 20px;
+  margin: 0% 25%;
+    height: 250px;
+/*     border-radius: 0px 5px; */
+
+  }
+.progress-bar {
+  width: 100%!important;
+  position: absolute;
+  bottom: 0;
+  background-color: #80CBC4;
+  box-shadow:none;
+}
+
+
