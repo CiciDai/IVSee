@@ -3,7 +3,7 @@
 #include <QueueArray.h>
 #include "HX711.h"
 
-String device = "device1";
+String device = "device2";
 
 #define FIREBASE_HOST "lab-2-9c033.firebaseio.com"
 #define FIREBASE_AUTH "cMMxTB9rBPd1Le13FnaERqd36zM7gBontNgw1KYo"
@@ -19,7 +19,7 @@ const int LOADCELL_SCK_PIN = 14;
 const long LOADCELL_OFFSET = -223330;
 const long LOADCELL_DIVIDER = 1317.5;
 //Button for tare
-const int buttonPin = 2;
+const int buttonPin = 0;
 int buttonState = 0;
 const int tarePin =  5;
 const int batteryPin =  4;
@@ -86,6 +86,7 @@ void loop() {
 //  the function takes 30 seconds to run
 //  read 11 data every 3 seconds
   send_data();
+  
 }
 
 //battery LED lights up if battery < 3V
